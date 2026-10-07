@@ -1,0 +1,75 @@
+📊 Bank Credit & Debit Analysis — Tableau
+Overview
+This module contains the Tableau dashboard created to visualize banking credit and debit transaction behavior.
+
+Tableau is used to create interactive visualizations and communicate business insights through data storytelling.
+
+Objectives
+Visualize credit and debit trends.
+Analyze customer transaction behavior.
+Analyze transaction categories.
+Compare branches.
+Identify high-value customers.
+Create interactive business dashboards.
+Dashboard Structure
+Dashboard 1 — Banking Overview
+Total Transactions
+Total Credit
+Total Debit
+Average Transaction
+Credit vs Debit
+Monthly Transaction Trend
+Dashboard 2 — Transaction Analysis
+Transaction Category
+Transaction Type
+Payment Mode
+Monthly Trend
+Transaction Distribution
+Dashboard 3 — Customer Analysis
+Top 10 Customers
+Customer Segment
+Customer Transaction Value
+Customer Transaction Count
+Average Transaction Value
+Dashboard 4 — Branch Analysis
+Branch Transaction Value
+Branch Transaction Count
+City Performance
+Credit vs Debit by Branch
+Recommended Charts
+KPI Cards
+Line Charts
+Bar Charts
+Donut Charts
+Heatmaps
+Treemaps
+Geographic Maps
+Highlight Tables
+Filters
+Date
+Transaction Type
+Category
+Customer Segment
+Account Type
+Branch
+City
+Payment Mode
+Calculated Fields
+Example:
+
+Credit Amount =
+IF [Transaction Type] = "Credit"
+THEN [Amount]
+END
+Debit Amount =
+IF [Transaction Type] = "Debit"
+THEN [Amount]
+END
+Deliverables
+Tableau workbook
+Interactive dashboards
+Dashboard screenshots
+Calculated fields
+Business insights
+Project Duration
+Week 3 — Tableau Dashboard Development :::
