@@ -1,1 +1,77 @@
 
+Bank Credit & Debit Analysis — Excel
+Overview
+This module contains the Microsoft Excel analysis for the Bank Credit & Debit Analysis project.
+
+Excel is used for data cleaning, exploratory data analysis, KPI calculations, Pivot Tables, Pivot Charts, and initial business insights.
+
+Objectives
+Clean and validate banking transaction data.
+Analyze credit and debit transactions.
+Calculate important banking KPIs.
+Analyze monthly transaction trends.
+Identify high-value customers.
+Analyze transaction categories.
+Prepare data for SQL, Power BI, and Tableau.
+Workbook Structure
+Bank_Credit_Debit_Analysis.xlsx
+│
+├── Raw_Data
+├── Cleaned_Data
+├── Data_Dictionary
+├── KPI_Analysis
+├── Customer_Analysis
+├── Credit_Analysis
+├── Debit_Analysis
+├── Monthly_Analysis
+└── Dashboard
+Key KPIs
+Total Transactions
+Total Credit Amount
+Total Debit Amount
+Total Transaction Value
+Average Transaction Amount
+Maximum Transaction Amount
+Minimum Transaction Amount
+Credit Transaction Count
+Debit Transaction Count
+Active Customers
+Credit-to-Debit Ratio
+Excel Techniques
+Data Cleaning
+Remove Duplicates
+Conditional Formatting
+Excel Tables
+SUMIFS
+COUNTIFS
+AVERAGEIFS
+IF
+XLOOKUP
+Date Functions
+Pivot Tables
+Pivot Charts
+Slicers
+Analysis
+Credit Analysis
+Analyze total credit amount, credit transaction count, monthly credit trends, customer-level credit activity, and credit by category.
+
+Debit Analysis
+Analyze total debit amount, debit transaction count, monthly debit trends, customer-level debit activity, and debit by category.
+
+Customer Analysis
+Identify:
+
+Top customers
+Most active customers
+High-value customers
+Customers with high credit activity
+Customers with high debit activity
+Deliverables
+Cleaned Excel dataset
+KPI calculations
+Pivot Tables
+Pivot Charts
+Excel dashboard
+Business insights
+Project Duration
+Week 1 — Data Cleaning & Excel Analysis :::
