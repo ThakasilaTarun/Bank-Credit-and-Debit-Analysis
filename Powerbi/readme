@@ -1,0 +1,177 @@
+ Bank Credit & Debit Analysis — Power BI
+Overview
+This module contains the Power BI dashboard for analyzing banking credit and debit transactions.
+
+The dashboard converts transaction-level data into interactive KPIs, charts, trends, and business insights.
+
+Objectives
+Build an interactive banking dashboard.
+Monitor credit and debit performance.
+Analyze customer transaction behavior.
+Analyze branch and account performance.
+Identify transaction trends.
+Provide business-focused insights.
+Dashboard Pages
+Page 1 — Executive Overview
+KPIs:
+
+Total Transactions
+Total Credit
+Total Debit
+Total Customers
+Average Transaction Amount
+Visuals:
+
+Credit vs Debit
+Monthly Transaction Trend
+Transaction Category
+Customer Segment
+Branch Performance
+Page 2 — Credit Analysis
+Total Credit
+Credit Transaction Count
+Monthly Credit Trend
+Credit by Category
+Credit by Customer
+Credit by Branch
+Page 3 — Debit Analysis
+Total Debit
+Debit Transaction Count
+Monthly Debit Trend
+Debit by Category
+Debit by Customer
+Debit by Branch
+Page 4 — Customer Analysis
+Top 10 Customers
+Customer Transaction Value
+Customer Transaction Count
+Customer Segment Analysis
+Average Transaction per Customer
+Recommended Data Model
+             Date
+              │
+              │
+Customer ── Transactions ── Account
+              │
+              ├── Branch
+              │
+              └── Category
+Example DAX Measures
+Total Transactions
+Total Transactions =
+COUNTROWS(BankTransactions)
+Total Credit
+Total Credit =
+CALCULATE(
+    SUM(BankTransactions[Amount]),
+    BankTransactions[Transaction_Type] = "Credit"
+)
+Total Debit
+Total Debit =
+CALCULATE(
+    SUM(BankTransactions[Amount]),
+    BankTransactions[Transaction_Type] = "Debit"
+)
+Average Transaction
+Average Transaction =
+AVERAGE(BankTransactions[Amount])
+Net Transaction Value
+Net Transaction Value =
+[Total Credit] - [Total Debit]
+Filters
+Dashboard users can filter by:
+
+Date
+Transaction Type
+Transaction Category
+Customer
+Customer Segment
+Account Type
+Branch
+City
+Payment Mode
+Deliverables
+.pbix Power BI file
+Dashboard screenshots
+DAX measures
+Data model
+Business insights
+Project Duration
+Week 3 — Power BI Dashboard Development :::
+
+04_Tableau/README.md
+:::writing{variant="document" id="90573" title="Tableau README.md"}
+
+📊 Bank Credit & Debit Analysis — Tableau
+Overview
+This module contains the Tableau dashboard created to visualize banking credit and debit transaction behavior.
+
+Tableau is used to create interactive visualizations and communicate business insights through data storytelling.
+
+Objectives
+Visualize credit and debit trends.
+Analyze customer transaction behavior.
+Analyze transaction categories.
+Compare branches.
+Identify high-value customers.
+Create interactive business dashboards.
+Dashboard Structure
+Dashboard 1 — Banking Overview
+Total Transactions
+Total Credit
+Total Debit
+Average Transaction
+Credit vs Debit
+Monthly Transaction Trend
+Dashboard 2 — Transaction Analysis
+Transaction Category
+Transaction Type
+Payment Mode
+Monthly Trend
+Transaction Distribution
+Dashboard 3 — Customer Analysis
+Top 10 Customers
+Customer Segment
+Customer Transaction Value
+Customer Transaction Count
+Average Transaction Value
+Dashboard 4 — Branch Analysis
+Branch Transaction Value
+Branch Transaction Count
+City Performance
+Credit vs Debit by Branch
+Recommended Charts
+KPI Cards
+Line Charts
+Bar Charts
+Donut Charts
+Heatmaps
+Treemaps
+Geographic Maps
+Highlight Tables
+Filters
+Date
+Transaction Type
+Category
+Customer Segment
+Account Type
+Branch
+City
+Payment Mode
+Calculated Fields
+Example:
+
+Credit Amount =
+IF [Transaction Type] = "Credit"
+THEN [Amount]
+END
+Debit Amount =
+IF [Transaction Type] = "Debit"
+THEN [Amount]
+END
+Deliverables
+Tableau workbook
+Interactive dashboards
+Dashboard screenshots
+Calculated fields
+Business insights
