@@ -1,0 +1,92 @@
+🗄️ Bank Credit & Debit Analysis — SQL
+Overview
+This module contains the SQL database design, data preparation, validation, and business analysis for the Bank Credit & Debit Analysis project.
+
+SQL is used to transform transaction-level data into meaningful business insights.
+
+Objectives
+Create a banking transaction database.
+Validate and clean transaction data.
+Calculate banking KPIs.
+Analyze customer behavior.
+Analyze credit and debit transactions.
+Analyze monthly trends.
+Identify top customers and branches.
+Generate business insights.
+SQL Files
+02_SQL/
+│
+├── README.md
+├── database_schema.sql
+├── data_cleaning.sql
+└── analysis_queries.sql
+Example Table
+CREATE TABLE bank_transactions (
+    transaction_id VARCHAR(50),
+    customer_id VARCHAR(50),
+    account_id VARCHAR(50),
+    transaction_date DATE,
+    transaction_type VARCHAR(20),
+    transaction_category VARCHAR(100),
+    amount DECIMAL(18,2),
+    account_type VARCHAR(50),
+    branch VARCHAR(100),
+    city VARCHAR(100),
+    payment_mode VARCHAR(50),
+    balance_after_transaction DECIMAL(18,2)
+);
+Business Questions
+What is the total transaction value?
+What is the total credit amount?
+What is the total debit amount?
+What is the credit-to-debit ratio?
+Which month has the highest transaction volume?
+Which customers have the highest transaction value?
+Which branches have the highest transaction activity?
+What are the most common transaction categories?
+What is the average credit transaction?
+What is the average debit transaction?
+Which account types have the highest activity?
+Which customers have unusually high transaction values?
+SQL Concepts
+SELECT
+WHERE
+GROUP BY
+ORDER BY
+CASE
+Aggregate Functions
+JOIN
+Subqueries
+CTEs
+Window Functions
+Date Functions
+Conditional Aggregation
+Main Analysis Areas
+Transaction Analysis
+Measure transaction count, transaction value, average amount, and transaction distribution.
+
+Credit Analysis
+Calculate credit amount, credit count, monthly credit trends, and top credit customers.
+
+Debit Analysis
+Calculate debit amount, debit count, monthly debit trends, and top debit customers.
+
+Customer Analysis
+Rank customers based on transaction count and total transaction value.
+
+Branch Analysis
+Compare transaction activity and transaction value across branches.
+
+Deliverables
+Database schema
+Data cleaning queries
+KPI queries
+Business analysis queries
+Customer analysis
+Branch analysis
+Monthly trend analysis
+Project Duration
+Week 2 — SQL Database & Business Analysis :::
+
+03_PowerBI/README.md
+:::writing{variant="document" id="46192" title="Power BI README.md"}
